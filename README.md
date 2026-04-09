@@ -1,16 +1,24 @@
-# VPS Rescue Guide
+# VPS Troubleshooting
 
-VPS 故障救砖与数据恢复指南
+## Issues
 
-## 常见问题
+| Issue | Solution |
+|-------|----------|
+| SSH | VNC Console |
+| CPU | kill process |
+| Disk | apt clean |
 
-- SSH 连接失败
-- 磁盘满
-- CPU 内存爆满
+## SSH Fix
 
-## 相关资源
+```bash
+systemctl status sshd
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+```
 
-- [VPS 推荐](https://vpsvip.net)
+## Resources
+
+- https://vpsvip.net
+- https://nav.clashvip.net
 
 ## License
 
