@@ -92,3 +92,14 @@ Cron: */5 * * * * /path/monitor.sh
 https://vpsvip.net
 https://nav.clashvip.net
 CC BY-NC-SA 4.0
+
+## Advanced CPU Monitoring
+
+```bash
+# Real-time monitoring
+watch -n 1 "ps aux --sort=-%%cpu | head -15"
+# Thread-level
+top -H -p PID
+# IO wait
+iostat -x 1
+```
