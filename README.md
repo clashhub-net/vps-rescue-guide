@@ -1,15 +1,19 @@
 # VPS Troubleshooting Guide
 
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](LICENSE)
+
+> Complete guide for VPS fault diagnosis and troubleshooting
+
 ## Common Issues
 
 | Issue | Solution |
 |-------|----------|
 | SSH Failed | VNC Console |
 | CPU 100% | kill process |
-| Memory Full | free -h |
 | Disk Full | apt clean |
+| Memory Full | free -h |
 
-## SSH Connection
+## SSH Troubleshooting
 
 ```bash
 systemctl status sshd
